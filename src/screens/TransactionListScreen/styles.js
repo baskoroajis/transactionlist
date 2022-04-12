@@ -1,6 +1,8 @@
+import {Platform} from 'react-native';
+
 export const styles = {
   container: {
-    marginTop: 40,
+    marginTop: Platform.OS === 'android' ? 40 : 80,
     backgroundColor: 'rgb(246,249,248)',
   },
   modal: {
